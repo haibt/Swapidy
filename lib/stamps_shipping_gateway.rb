@@ -1,4 +1,4 @@
-#require 'stamps'
+require 'stamps'
 
 #This module would be included into Order class/module
 module StampsShippingGateway
