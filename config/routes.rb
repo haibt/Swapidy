@@ -25,6 +25,8 @@ Swapidy::Application.routes.draw do
   match "/privacy" => "home#static_page", :method => :get, :content => "privacy", :page_title => "Privacy Policy"
   match "/s4" => "home#static_page", :method => :get, :content => "s4", :page_title => "Pre-order S4"
   match "/howitworks" => "home#static_page", :method => :get, :content => "howitworks", :page_title => "How it Works"
+  match "/braintree" => "home#static_page", :method => :get, :content => "braintree", :page_title => "Braintree"
+
 
   match "/testimonials" => "home#static_page", :method => :get, :content => "testimonials", :page_title => "Testimonials"
 
@@ -35,7 +37,9 @@ Swapidy::Application.routes.draw do
   
   match "/location/vote" => "location#vote", :method => :post
   match "/location/:location" => "location#change", :method => :get
-  
+  match "/create_transaction" => "orders#create", :method => :post
+
+
   resources :products
   match "/csv_import/:fn" => "products#csv_import"
   #match "/payments/new" => "payments#new", :method => :post
