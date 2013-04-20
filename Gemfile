@@ -31,6 +31,7 @@ gem 'multi_json', '~> 1.0'
 
 gem 'delayed_job_active_record'
 gem 'braintree'
+gem 'sinatra'
 #gem 'rack-timeout'
 #gem 'resque'
 #gem 'stamps'

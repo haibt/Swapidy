@@ -296,6 +296,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   savon (= 0.8.6)
   simple_form
+  sinatra
   sqlite3
   stripe
   therubyracer
