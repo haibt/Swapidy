@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<context mirror="true" wait="none">
+		<!-- Kinect with OpenNI requires VGA settings for depth (640x480) at 30fps; other sensors get better performance with QVGA (320x240) at 60fps -->
+		<depth width="640" height="480" fps="30" />
+		<!-- <image width="320" height="240" fps="30" />
+		<ir width="320" height="240" fps="60" /> -->
+		<scene />
+		<hands />
+		<gesture add="Click,Wave" starttracking="Wave" stoptracking="Click" />
+		<user skeletonprofile="all" />
+	</context>
+	<assets path="assets/" file="assets.xml" />
+	<content path="content/sample/" file="content.xml" />
+	<theme path="themes/default/" file="presentation.xml" />
+</settings>
